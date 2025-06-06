@@ -136,3 +136,10 @@ const nomeItem = inventarioAlpha.map((item) => item[0]);
 const reliquiaDisponível = nomeItem.includes("Nanofibra Luminosa");
 
 console.log(reliquiaDisponível);
+
+// 11. Gere uma string com todos os planetas do inventário Alpha, separados por um delimitador.
+
+const planetasAlpha = inventarioAlpha.map((item) => item[1]);
+let planetasAlphaString = planetasAlpha.join(", ");
+
+console.log(`Planetas do inventário Alpha: ${planetasAlphaString}`);
