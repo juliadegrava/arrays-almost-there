@@ -76,8 +76,9 @@ inventarioAlpha.push(
     ['Khilutatra', 'Terra', 50000],
     ['Pentagloss', 'Terra', 2900],
     ['Xymorax', 'Terra', 48000]
-)
-console.log('Inventário Alpha pós novos artefatos da Terra serem adicionados:');
+);
+
+console.log('Inventário Alpha após novos artefatos da Terra serem adicionados:');
 console.table(inventarioAlpha);
 
 // 4. Dois artefatos especiais de Kepler foram coletados e adicionados à nave Beta.
@@ -85,9 +86,9 @@ console.table(inventarioAlpha);
 inventarioBeta.push(
     ["Fragmento Prismático", "Kepler-22b", 6400],
     ["Núcleo de Plasma", "Kepler-452b", 9100]
-)
+);
 
-console.log('Inventário Beta pós artefatos especiais de Kepler serem adicionados:');
+console.log('Inventário Beta após artefatos especiais de Kepler serem adicionados:');
 console.table(inventarioBeta);
 
 // 5. Um item da Alpha precisa aparecer no topo da lista para ser destacado na vitrine.
@@ -95,7 +96,7 @@ console.table(inventarioBeta);
 let itemAlpha = inventarioAlpha.pop();
 inventarioAlpha.unshift(
     ['Xymorax', 'Terra', 48000]
-)
+);
 
 console.log("Inventário Alpha pós item destacado:");
 console.table(inventarioAlpha);
@@ -105,7 +106,13 @@ console.table(inventarioAlpha);
 let itemBeta = inventarioBeta.pop();
 inventarioBeta.unshift(
     ["Núcleo de Plasma", "Kepler-452b", 9100]
-)
+);
 
 console.log("Inventário Beta pós item promovido:");
 console.table(inventarioBeta);
+
+// 7. Um artefato incorreto foi inserido no topo da Alpha por engano. Ele deve ser excluído.
+
+let artefatoIncorreto = inventarioAlpha.shift();
+console.log('Após excluir item adicionado por engano:');
+console.table(inventarioAlpha);
