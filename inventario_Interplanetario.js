@@ -67,3 +67,12 @@ console.log(`Cópia removida: ${copiaRemovida}`);
 let artefatoObsoleto = inventarioBeta.pop();
 console.log(`Após avaliação técnica: ${inventarioBeta}`);
 console.log(`Artefato obsoleto: ${artefatoObsoleto}`);
+
+// 3. Três novos artefatos da Terra foram entregues à nave Alpha. Adicione-os ao final.
+
+inventarioAlpha.push(
+    ['Khilutatra', 'Terra', '50000'],
+    ['Pentagloss', 'Terra', '2900'],
+    ['Xymorax', 'Terra', '48000']
+)
+console.log(`Inventário pós novos artefatos da Terra serem adicionados: ${inventarioAlpha}`);
