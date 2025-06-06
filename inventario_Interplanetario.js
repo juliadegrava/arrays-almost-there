@@ -89,3 +89,13 @@ inventarioBeta.push(
 
 console.log('Inventário Beta pós artefatos especiais de Kepler serem adicionados:');
 console.table(inventarioBeta);
+
+// 5. Um item da Alpha precisa aparecer no topo da lista para ser destacado na vitrine.
+
+let itemAlpha = inventarioAlpha.pop();
+inventarioAlpha.unshift(
+    ['Xymorax', 'Terra', 48000]
+)
+
+console.log("Inventário Alpha pós item destacado:");
+console.table(inventarioAlpha);
