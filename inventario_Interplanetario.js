@@ -84,7 +84,7 @@ console.table(inventarioAlpha);
 
 inventarioBeta.push(
     ["Fragmento Prismático", "Kepler-22b", 6400],
-    ["Núcleo de Plasma", "Kepler-452b", 9100],
+    ["Núcleo de Plasma", "Kepler-452b", 9100]
 )
 
 console.log('Inventário Beta pós artefatos especiais de Kepler serem adicionados:');
@@ -99,3 +99,13 @@ inventarioAlpha.unshift(
 
 console.log("Inventário Alpha pós item destacado:");
 console.table(inventarioAlpha);
+
+// 6. Um item da Beta deve ser promovido para o início da lista para estudo prioritário.
+
+let itemBeta = inventarioBeta.pop();
+inventarioBeta.unshift(
+    ["Núcleo de Plasma", "Kepler-452b", 9100]
+)
+
+console.log("Inventário Beta pós item promovido:");
+console.table(inventarioBeta);
