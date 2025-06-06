@@ -122,3 +122,10 @@ console.table(inventarioAlpha);
 let itemMuseu = inventarioBeta.shift();
 console.log('Após remover item pertencente ao museu:');
 console.table(inventarioBeta);
+
+// 9. Verifique se a “Relíquia de Zordon” está presente no inventário Beta. (nível hard)
+
+const nomesItens = inventarioBeta.map((item) => item[0]);
+const reliquiaExiste = nomesItens.includes("Relíquia de Zordon");
+
+console.log(reliquiaExiste);
