@@ -116,3 +116,9 @@ console.table(inventarioBeta);
 let artefatoIncorreto = inventarioAlpha.shift();
 console.log('Após excluir item adicionado por engano:');
 console.table(inventarioAlpha);
+
+// 8. O primeiro item da Beta pertence a um museu e deve ser removido.
+
+let itemMuseu = inventarioBeta.shift();
+console.log('Após remover item pertencente ao museu:');
+console.table(inventarioBeta);
