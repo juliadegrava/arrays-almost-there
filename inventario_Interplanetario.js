@@ -58,21 +58,34 @@ let inventarioBeta = [
 // 1. Um item duplicado foi detectado no final do inventário Alpha. Remova a cópia.
 
 let copiaRemovida = inventarioAlpha.pop();
-console.log(`Depois de remover a cópia: ${inventarioAlpha}`);
+console.log('Depois de remover a cópia:');
+console.table(inventarioAlpha); 
 console.log(`Cópia removida: ${copiaRemovida}`);
 
 
 // 2. Um artefato obsoleto foi removido do final da lista Beta após avaliação técnica.
 
 let artefatoObsoleto = inventarioBeta.pop();
-console.log(`Após avaliação técnica: ${inventarioBeta}`);
+console.log('Após avaliação técnica:');
+console.table(inventarioBeta);
 console.log(`Artefato obsoleto: ${artefatoObsoleto}`);
 
 // 3. Três novos artefatos da Terra foram entregues à nave Alpha. Adicione-os ao final.
 
 inventarioAlpha.push(
-    ['Khilutatra', 'Terra', '50000'],
-    ['Pentagloss', 'Terra', '2900'],
-    ['Xymorax', 'Terra', '48000']
+    ['Khilutatra', 'Terra', 50000],
+    ['Pentagloss', 'Terra', 2900],
+    ['Xymorax', 'Terra', 48000]
 )
-console.log(`Inventário pós novos artefatos da Terra serem adicionados: ${inventarioAlpha}`);
+console.log('Inventário Alpha pós novos artefatos da Terra serem adicionados:');
+console.table(inventarioAlpha);
+
+// 4. Dois artefatos especiais de Kepler foram coletados e adicionados à nave Beta.
+
+inventarioBeta.push(
+    ["Fragmento Prismático", "Kepler-22b", 6400],
+    ["Núcleo de Plasma", "Kepler-452b", 9100],
+)
+
+console.log('Inventário Beta pós artefatos especiais de Kepler serem adicionados:');
+console.table(inventarioBeta);
