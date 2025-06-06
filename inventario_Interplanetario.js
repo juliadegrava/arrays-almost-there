@@ -143,3 +143,8 @@ const planetasAlpha = inventarioAlpha.map((item) => item[1]);
 let planetasAlphaString = planetasAlpha.join(", ");
 
 console.log(`Planetas do inventário Alpha: ${planetasAlphaString}`);
+
+// 12. Crie um texto com os nomes dos 10 primeiros itens da Beta, separados por vírgulas.
+
+let dezPrimeiros = inventarioBeta.slice(0, 10);
+console.log(`Dez primeiros itens do inventário Beta: ${dezPrimeiros.join(", ")}`);
