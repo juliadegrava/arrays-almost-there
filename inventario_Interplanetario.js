@@ -129,3 +129,10 @@ const nomesItens = inventarioBeta.map((item) => item[0]);
 const reliquiaExiste = nomesItens.includes("Relíquia de Zordon");
 
 console.log(reliquiaExiste);
+
+// 10. Verifique se o item “Nanofibra Luminosa” ainda está disponível na Alpha. (nível hard)
+
+const nomeItem = inventarioAlpha.map((item) => item[0]);
+const reliquiaDisponível = nomeItem.includes("Nanofibra Luminosa");
+
+console.log(reliquiaDisponível);
