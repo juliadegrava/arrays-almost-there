@@ -148,3 +148,9 @@ console.log(`Planetas do inventário Alpha: ${planetasAlphaString}`);
 
 let dezPrimeiros = inventarioBeta.slice(0, 10);
 console.log(`Dez primeiros itens do inventário Beta: ${dezPrimeiros.join(", ")}`);
+
+// 13. Gere uma nova lista com os 5 primeiros itens da nave Beta para inspeção.
+
+let cincoPrimeiros = inventarioBeta.slice(0, 5)
+console.log("Lista com os 5 primeiros itens:");
+console.table(cincoPrimeiros);
