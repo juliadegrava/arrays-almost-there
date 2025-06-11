@@ -151,6 +151,12 @@ console.log(`Dez primeiros itens do inventário Beta: ${dezPrimeiros.join(", ")}
 
 // 13. Gere uma nova lista com os 5 primeiros itens da nave Beta para inspeção.
 
-let cincoPrimeiros = inventarioBeta.slice(0, 5)
+let cincoPrimeiros = inventarioBeta.slice(0, 5);
 console.log("Lista com os 5 primeiros itens:");
 console.table(cincoPrimeiros);
+
+// 14. Separe os 10 últimos itens do inventário Alpha para estudo temporal.
+
+let dezUltimos = inventarioAlpha.slice(17, 27);
+console.log("Últimos 10 itens do invetário Alpha:");
+console.table(dezUltimos);
